@@ -12,7 +12,28 @@ body {
     font-family: sans-serif;
 }
 
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #f6f8f9;
+}
+
 /* UTILITIES */
+.button {
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 32px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: lightgray;
+    border: 1px solid lightgray;
+}
+
+.button.primary {
+    color: white;
+    border: 1px solid #47adf1;
+    background-color: #47adf1;
+}
 
 /* PAGE */
 .page {
@@ -41,3 +62,14 @@ header h1 {
 }
 
 /* MAIN */
+main {
+    width: 80%;
+    height: 80%;
+    margin: 32px auto;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+main section {
+    padding: 24px 32px;
+}
