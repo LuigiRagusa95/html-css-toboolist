@@ -48,12 +48,35 @@ header {
 main {
     width: 80%;
     height: auto;
-    margin: 16px auto;
+    margin: 32px auto;
     border-radius: 8px;
     background-color: #ffffff;
 }
 
+section {
+    color: #444851;
+    padding: 16px 32px;
+}
+
 /* UTILITIES */
+.arrow {
+    display: flex;
+    margin-top: 8px;
+    border-width: 8px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #444851;
+}
+
+.chip {
+    padding: 0 12px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    border-radius: 16px;
+}
+
 .blue {
     background-color: #47adf1;
 }
@@ -82,6 +105,12 @@ main {
     background-color: #b0c926;
 }
 
+.primary {
+    color: #ffffff;
+    border: 1px solid #47adf1;
+    background-color: #47adf1;
+}
+
 /* MAIN APP */
 
 #app {
@@ -90,21 +119,11 @@ main {
     background-color: #f6f8f9;
 }
 
-.primary {
-    color: #ffffff;
-    border: 1px solid #47adf1;
-    background-color: #47adf1;
-}
-
-section {
-    color: #444851;
-    padding: 16px 32px;
-}
-
 .card {
     width: 100%;
     display: flex;
     flex-flow: column;
+    margin-bottom: 16px;
 }
 
 .card__header {
@@ -117,25 +136,17 @@ section {
     align-items: center;
 }
 
-.arrow {
-    display: flex;
-    margin-top: 8px;
-    border-width: 8px;
-    border-radius: 2px;
-    border-style: solid;
-    border-color: transparent;
-    border-top-color: #444851;
-}
-
 .card__list {
     display: flex;
     list-style: none;
-    line-height: 32px;
+    line-height: 36px;
+    flex-flow: column;
 }
 
 .card__list li {
     gap: 8px;
     display: flex;
+    padding: 0 24px;
     align-items: center;
 }
 
@@ -153,7 +164,7 @@ section {
     border: 2px solid #64c0a9;
 }
 
-.chip {
-    padding: 0 12px;
-    border-radius: 8px;
+.unchecked {
+    color: #ea4237;
+    border: 2px solid #ea4237;
 }
