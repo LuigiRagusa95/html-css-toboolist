@@ -99,7 +99,8 @@ li {
 /* PAGE */
 .page {
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding-bottom: 32px;
     background-color: #f6f8f9;
 }
 
@@ -125,10 +126,10 @@ header h1 {
 /* MAIN */
 main {
     width: 80%;
-    height: 80%;
+    height: auto;
     color: #444851;
-    margin: 32px auto;
     border-radius: 8px;
+    margin: 32px auto 0;
     background-color: #ffffff;
 }
 
@@ -139,6 +140,7 @@ main section {
 /* ACCORDION */
 .accordion {
     display: block;
+    margin-bottom: 24px;
 }
 
 .accordion__button {
@@ -160,5 +162,5 @@ main section {
 }
 
 .accordion__list li {
-    line-height: 32px;
+    line-height: 42px;
 }
